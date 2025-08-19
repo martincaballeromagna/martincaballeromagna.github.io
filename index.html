@@ -22,6 +22,7 @@
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.5}
     a{color:inherit;text-decoration:none}
     .cm-container{max-width:var(--maxw);margin-inline:auto;padding:28px;gap:24px}
+    .cm-logo{max-width:180px;margin-bottom:22px;display:block}
     .cm-badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--stroke);border-radius:999px;background:rgba(255,255,255,.03);color:var(--muted);font-size:12px;letter-spacing:.3px}
     .cm-hero{padding:48px 0}
     .cm-hero__panel{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid var(--stroke);border-radius:var(--radius);box-shadow:var(--shadow);padding:36px}
@@ -32,7 +33,7 @@
     .cm-chip{font-size:12px;color:var(--text);border:1px solid var(--stroke);background:rgba(124,196,255,.08);padding:6px 10px;border-radius:999px}
     .cm-cta{display:flex;flex-wrap:wrap;gap:12px}
     .cm-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;border:1px solid var(--stroke);transition:all .2s ease;cursor:pointer}
-    .cm-btn--primary{background:linear-gradient(180deg,rgba(124,196,255,.16),rgba(124,196,255,.08));color:#0a0f16;border-color:rgba(124,196,255,.4);box-shadow:0 6px 18px rgba(124,196,255,.18);color:var(--text)}
+    .cm-btn--primary{background:linear-gradient(180deg,rgba(124,196,255,.16),rgba(124,196,255,.08));color:var(--text);border-color:rgba(124,196,255,.4);box-shadow:0 6px 18px rgba(124,196,255,.18)}
     .cm-btn--ghost{background:transparent;color:var(--text)}
     .cm-btn:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,0,0,.25)}
     .cm-btn svg{opacity:.9}
@@ -61,7 +62,11 @@
   <section class="cm-hero">
     <div class="cm-container">
       <div class="cm-hero__panel">
-        <div class="cm-badge cm-hero__eyebrow">Consultora Caballero‑Magna</div>
+        
+        <!-- LOGO -->
+        <img src="logo.png" alt="Logo Consultora Caballero-Magna" class="cm-logo">
+        
+        <div class="cm-badge cm-hero__eyebrow">Consultora Caballero-Magna</div>
         <h1 class="cm-hero__title">Tu Socio Estratégico en el Mundo Digital</h1>
         <p class="cm-hero__lead">
           Integramos estrategia, diseño y ejecución para que tu marca no solo se vea impecable, sino que crezca con métricas claras.
@@ -90,136 +95,4 @@
     </div>
   </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section id="sobre-nosotros" class="cm-section">
-    <div class="cm-container">
-      <div class="cm-section__header">
-        <div>
-          <div class="cm-kicker">Sobre nosotros</div>
-          <h2 class="cm-h2">Tu aliado para convertir visión en resultados</h2>
-        </div>
-      </div>
-      <div class="cm-card">
-        <p>
-          En Consultora Caballero‑Magna creemos que cada emprendimiento tiene un potencial único, y nuestra misión es llevarlo al siguiente nivel.
-          No somos solo consultores: nos integramos a tu equipo para aportar estrategia, creatividad y acción en cada paso del camino.
-        </p>
-        <p>
-          Combinamos <strong>marketing digital, branding y desarrollo web</strong> con un entendimiento profundo del mercado y las tendencias, para que no solo
-          compitas… sino que lideres. Si buscas un socio que entienda tus metas, cuide tu marca y transforme ideas en resultados medibles, aquí estamos para
-          que tu proyecto brille con fuerza.
-        </p>
-        <ul class="cm-ul">
-          <li class="cm-li">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <span>Metodologías claras, plantillas accionables y reporting transparente.</span>
-          </li>
-          <li class="cm-li">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <span>Foco en métricas que importan: crecimiento sostenido y rentabilidad.</span>
-          </li>
-          <li class="cm-li">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <span>Acompañamiento cercano y ejecución con estándar premium.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section id="servicios" class="cm-section">
-    <div class="cm-container">
-      <div class="cm-section__header">
-        <div>
-          <div class="cm-kicker">Servicios</div>
-          <h2 class="cm-h2">Estrategias que marcan la diferencia</h2>
-        </div>
-      </div>
-
-      <div class="cm-grid cm-grid--3">
-        <article class="cm-card">
-          <h3>Gestión de redes sociales</h3>
-          <p>Contenido estratégico y creativo que conecta, construye comunidad y posiciona tu marca en la mente de tus clientes.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Calendario editorial, producción y community management.</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="cm-card">
-          <h3>Publicidad digital (SEM/Ads)</h3>
-          <p>Campañas en Google y redes sociales enfocadas en atraer clientes potenciales y maximizar tu inversión publicitaria.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Segmentación, creatividades y optimización basada en datos.</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="cm-card">
-          <h3>Branding e identidad visual</h3>
-          <p>Marcas memorables con personalidad, coherencia y alto impacto visual para diferenciarte con claridad.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Naming, storytelling, sistema visual y brand book.</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="cm-card">
-          <h3>Desarrollo web y UX/UI</h3>
-          <p>Websites rápidos, accesibles y listos para convertir — con diseño responsive y SEO técnico desde el inicio.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Arquitectura, performance y analítica integrada.</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="cm-card">
-          <h3>Email marketing y automatizaciones</h3>
-          <p>Flujos inteligentes para fidelizar y aumentar el LTV con mensajes relevantes en el momento justo.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Onboarding, carritos abandonados, newsletters y CRM.</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="cm-card">
-          <h3>Analítica y optimización de embudos</h3>
-          <p>Medición end‑to‑end para descubrir cuellos de botella y escalar lo que funciona.</p>
-          <ul class="cm-ul">
-            <li class="cm-li">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              <span>Tagging, dashboards, CRO y experimentación.</span>
-            </li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="cm-divider"></div>
-      <p class="cm-note">¿Listo para despegar? Agenda una reunión y armamos tu plan de 90 días con KPIs claros y responsabilidades compartidas.</p>
-    </div>
-  </section>
-
-  <!-- Opcional: sección contacto -->
-  <section id="contacto" class="cm-section">
-    <div class="cm-container">
-      <div class="cm-card">
-        <h3>Conversemos</h3>
-        <p class="cm-note">Escríbenos y coordinamos una reunión para entender tus metas y priorizar quick wins.</p>
-        <a class="cm-btn cm-btn--primary" href="mailto:hola@caballeromagna.cl">Contactar</a>
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
+  <!-- ... resto de tu código ... -
